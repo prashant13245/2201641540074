@@ -1,0 +1,45 @@
+# AFFORDMED • URL Shortener (React + Material UI)
+
+A **React-based URL Shortener Web Application** built as part of the Affordmed assignment.  
+This app allows users to shorten long URLs, manage redirects, and view analytics (click statistics).  
+
+---
+
+## 🚀 Features
+
+- **URL Shortening**
+  - Generate a unique short URL for any valid long URL
+  - Store short URLs locally with creation & expiry timestamps
+  - Prevent duplicate entries & handle collisions
+
+- **Redirection**
+  - Visiting a short URL (`/:code`) redirects to the original long URL
+  - Tracks click details: timestamp, source (referrer), and coarse location
+
+- **Analytics Dashboard**
+  - View all created short URLs with expiry, creation time, and total clicks
+  - Inspect detailed click data for each short link
+
+- **Error Handling**
+  - Invalid or malformed URLs show friendly error messages
+  - Expired or non-existing codes display appropriate alerts
+
+- **UI/UX**
+  - Built entirely with **Material UI (MUI)**
+  - Responsive, production-friendly, uncluttered design
+
+---
+
+## 🛠️ Tech Stack
+
+- **React 18** (Create React App)
+- **Material UI (MUI)** for styling
+- **React Router DOM** for routing
+- **LocalStorage** for client-side persistence
+- **nanoid** for unique ID generation
+- **date-fns** for date handling
+
+---
+
+## 📂 Project Structure
+
